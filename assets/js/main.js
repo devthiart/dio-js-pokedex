@@ -6,6 +6,7 @@ const limit = 10
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
+    console.log(pokemon);
     return `
         <li class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
@@ -18,6 +19,14 @@ function convertPokemonToLi(pokemon) {
 
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
+            </div>
+            <div class="status">
+                <h3 class="status__title">Status</h3>
+                <ul>
+                    ${
+                        pokemon.stats.map((stat) => `<li><p><strong>${stat.stat.name}:</strong> ${stat.base_stat}</p></li>`).join('')
+                    }
+                </ul>
             </div>
         </li>
     `

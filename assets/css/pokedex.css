@@ -127,6 +127,27 @@
     height: 70px;
 }
 
+.pokemon .status {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.pokemon .status__title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pokemon ul li {
+    list-style-type: none;
+}
+
+.pokemon .status p {
+    text-transform: uppercase;
+}
+
 .pagination {
     display: flex;
     flex-direction: row;
